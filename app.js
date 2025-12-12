@@ -1342,7 +1342,7 @@ function generatePdf(doc, tipo) {
 
   const esFactura = tipo === "Factura";
   const tituloDoc = esFactura ? "FACTURA" : "COTIZACIÓN";
-  const labelNumero = esFactura ? ""  "";
+  const labelNumero = esFactura ? "Factura #" : "Cotización #";
   const labelBloqueCliente = esFactura ? "Facturar a:" : "Cotizar a:";
 
   let y = 20;
